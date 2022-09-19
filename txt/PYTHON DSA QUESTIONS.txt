@@ -1,0 +1,128 @@
+=======What is data structure?===========
+
+Data structure are different ways to organize data in your computer,to work more efficiently.
+Real life example of data structure is a queue where if we want to buy tickets we need to form a line and
+it works on the basis of first in first out principle.
+
+===================explain different types of data structure=======================
+
+There are two types of data structures.Primitive or Inbuilt  data structures and non primitive or user defined
+data structures.
+The primitive data structures are Integer,Boolean,Float,String,Character.
+The built in data structures in python are List,set,tuples,dictionary.
+and the non primitive data structures are stack,queue,linkedlist,tree,graph.
+
+===========what is a list in python=============
+
+A list in python is defined by [] and it is one of the four builtin data structure in
+python. It is a mutable ordered collection of items.It can store any type of data
+whether its an integer or string inside them.
+
+Lists increases productivity.
+List are really flexible.
+
+============what is tuple in python?==============
+
+A tuple is defined by () and it is one of the 4 builtin data structures in python.
+It is an immutable ordered collection of items which we cannot change after defining
+them.It can store any type of datawhether its an integer or string inside them.
+
+Tuples are fine sized and faster than lists.
+It can be very efficient when we have a predefined set of values.
+It is easy to search values in tuples.
+
+============what is dictionary in python?==========
+
+A dictionary is defined by {} and it is a collection of items which is
+unordered and changeable and indexed key value pair.
+
+It improves the readibility of the code.
+It makes the programme more time and space efficient.
+
+==========what is linked list in python==========
+A linked list a form of sequential collection of elements and it does not
+have to be in order.Each node of the linked list can contain any type of values and
+each node of the linked list holds the reference to the next of the linked list.
+It is a linear data structure.
+It is a dynamic data structure and using it stops wastage of memory
+
+============what is stack in python===========
+
+A stack is a linear data structure that stores data in the last in first out manner.
+In stack the insert and deletion operations are often called as push and pop.
+A real life example of stack is a pile of dinner plates,the last placed dinner
+plate is taken out first.
+The advantages of stack is it is easy to implement.
+The memory is easy to allocate and deallocate.
+Stacks are used to solve problems that works in recursion.
+
+===========what is queue in python?==========
+
+A queue is a linear data structure that stores data in the first in first out 
+manner.In queue the insert and delete functions are often called as enqueue
+and dequeue.A real life example of queue is the line for the ticket of anything.
+the first one in the line gets more priority.
+By using queue multiple data can be handled and they are fast and also flexible.
+
+==============What is Tree in python============
+
+A tree is a non-linear data structure in which a root node is present,all the 
+other nodes than that is connected to a parent node.Tree represents the nodes
+that are connected by edges.
+
+It is a flexible way to hold and move data.
+It is a hierarchial way to hold data.
+Insertion and deletion operations are faster than linked list and lists.
+
+=============what is Graph in python============
+
+The graph consists of a finite set of vertices and a set of edges
+which connects a pair of nodes.
+
+graph algorithm is used to find the shortest path in a map.
+Its main advantage is it makes it easy to work with large amount of data.
+They are also very effective visual tools. 
+
+=========What is an array in python?==========
+
+An array in python is collection of items with common type of data structures
+having elements of same data type.It is a mutable data structure.
+
+Arrays are more perfect for arithmatic operations.
+
+=============What is the difference between arrays and python lists=======
+
+Lists are more flexible Arrays are not that flexible.
+Lists can consist of different data types . Arrays only consists of the
+same datatype
+Large chunk of memory required ,Arrays are more compact in size.
+Cannot perform Arithmatic operations easily.Can perform arithmatic operations
+easily.
+Preferred for short sequence of data.Preferred for long sequence of data. 
+
+===============What is the difference between Lists and Tuples===========
+
+Lists are Mutable || Tuples are Immutable.
+Iterating through a list is more time consuming. || Iterating through a
+tuple is less time consuming
+List consumes a lot of memory || Tuples consume a lot less memory.
+
+===========What is the difference between Lists and Dictionary==========
+In Lists the values are accesed via INDEX || In dictionary searching is done 
+using Keys.
+Lists are ordered || Dictionaries are unordered.
+Lists allows duplicates || Dictionary does'nt allow duplicates.
+Preferred for ordered data || Preferred for unique Key value pair datas.
+
+=============Difference between List and Linked list==============\
+
+In list data is stored in a contigious way so inserting a data can lead to
+other data being overridden.  || In linked list data is stored in non-contigious 
+memory locations so it is more dynamic.
+
+Elements of linked list are independent objects. || Elements of list arent.
+
+The size of linked list is not predefined.
+
+Insertion and deletion operations are very efficient.
+ 

@@ -1,0 +1,241 @@
+What are the main pillars of oops?
+
+The main pillars of OOPs are inheritance,polymorphism,encapsulation and abstaction
+
+==================What is OOPs? What are the advantages of OOPS?===================
+
+OOPs stands for object oriented programming.
+The main advantages of using OOPs is that we can use to break a big complex project into different parts and solve them one at a time.It also helps us to 
+protect data and divide works into different teams.by using OOPs we can reuse bits of codes multiple times by using inheritance.To remove concurrency and 
+to implement data binding.
+
+=================What is a class? and what is an object?==========================
+
+In Object oriented programming a class is a template ,and an object is the real life implementation of it.
+Let's say ALL IT companies are a class then xyz company will be the object.
+
+========What is class variable and Classmethod and Staticmethod?===============
+
+A class variable is a variable inside a class which is shared by all the instances of that class.It is defined globally inside the class outside any constructor
+or methods.
+To access a class variable we need to create and object of that class and the we can call it by using object.Class_Var
+
+A classmethod is a method that is bound to a class more than its bound to its object.It is defined by @classmethod in python. Used to change chutti_days class variable
+
+Static method is also same like classmethod.Printgood method.
+Classmethod takes cls as an argument static doesnt
+Classmethod can modify the state of a class
+We use @classmethod and @staticmethod to define them.
+
+======What is a Constructor in Pyhton?============
+
+Constructor is a method that is used to initialize the objects of a class.In python it is used by __init__().It is used together with self to represent the instance
+of a class.
+
+def __init__(self,arg1,arg2):
+	self.arg1=arg1
+
+======What is Super in python?======
+
+It is used to inherit all the data declared in the parent class into the subclass and we don't need to remember their names too.
+
+class Animals:
+    def __init__(self):
+        self.legs=4
+        self.mammal=True
+        self.tail=True
+        self.domestic=True
+
+    def is_mammals(self):
+        if self.mammal:
+            print("it is a mammal")
+
+    def is_domestic(self):
+        if self.domestic:
+            print("It is a domestic animal")
+    
+class Dogs(Animals):
+
+    def __init__(self):
+        super().__init__()
+
+    def is_mammals(self):
+        super().is_mammals()
+
+class Horses(Animals):
+    def __init__(self):
+        super().__init__()
+
+    def hastailsandlegs(self):
+        if self.tail and self.legs==4:
+            print("It has a tail and 4 legs")
+
+kalu=Dogs()
+kalu.is_mammals()
+raju=Horses()
+raju.hastailsandlegs()
+
+
+======What are access modifiers in python explain with examples.===============
+
+There are THREE TYPES OF ACCESS MODIFIERS IN PYTHON :private , public , protected
+variables with the public access modifiers can be accessed anywhere within the class, variables with the private class can only be accessed within the 
+the same class and variables with protected class can be accessed only within the same module.
+
+============What is Inheritance? what are the different types of it explain with example.===============
+
+In OOPs inhereitance is a concept where the existing class functions can be used within another class. 
+There are FOUR types of inheritance present currently.
+Single
+multiple
+multilevel
+hierarchial Inheriance
+
+example of single inheritance:
+when a child class only inherits only one parent class
+class Parent:
+	def first(self):
+		print("First Function")
+class child(parent):
+	def second(self):
+		print("Second Function")
+
+ob=child()
+ob.first()
+ob.second()
+
+Example of multiple inheritance:
+when a child class inherits from multiple parent class
+
+class dad:
+	def daddy(Self):
+		print("I am the dad")
+class Mom:
+	def mommy(self):
+		print("I am the mom")
+class Child(dad,mom):
+	def child(self):
+		print("I am the child")
+ob=child()
+ob.child()
+ob.daddy()
+ob.mommy()
+
+Example of multilevel inheritance:
+When a child class becomes a parent class for another child class
+
+
+class grandpa:
+	def grandfather(self):
+		print("I am the grandfather")
+class Dad(grandpa):
+	def dad(self):
+		print("I am the father")
+class son(dad):
+	def son(self):
+		print("I am the son")
+
+ob=son()
+ob.grandfather()
+ob.father()
+ob.son()
+
+Example of hierarchial inheritance:
+when multiple childs inherits from the same parent class 
+
+class dad:
+	def father(self):
+		print("I am the father")
+class son(dad):
+	def son(Self):
+		print("I am the son")
+class daughter(dad):
+	def daughter(Self):
+		print("I am the daughter")
+ob=son()
+ob1=daughter()
+ob.son()
+ob.daughter()
+
+==========what is polymorphism?With example====================
+
+The word polymorphism means different shapes.It means having the same function behaving differently for different scenarions.
+Example LEN function
+l=[10,20,30,40]
+s="ANUVAB"
+print(Len(s))
+print(len(l))
+class usa():
+	def capital(self):
+		print("capital is abc")
+	
+	def type(self):
+		print("developed")
+class india():
+	def capital(Self):
+		print("capital is xyz")
+	def type(Self):
+		print("developing")
+
+ob1=india()
+ob2=usa()
+for i in (ob1,ob2):
+	i.capital()
+	i.type()
+
+================What is abstraction and encapsulation explain with example============
+
+Data abstraction refers to providing only essential information to the outside world and hiding all the inner details from it.
+in python we need to import ABC from abc module
+from abc import ABC,abstructmethod
+class car(ABC):
+	def milage(self):
+		pass
+class tesla(car):
+	def milage(self):
+		print("THE mileage is 30")
+class renault(car):
+	def milage(self):
+		print("THE MILEAGE IS 25")
+t=tesla()
+t.mileage()
+r=renault()
+r.mileage()
+
+In oops data encapsulation is used to bind the properties , functions and members as a single unit.Class is the best example of data encapsulation.
+
+=============What is method overloading and method overriding and what is their difference?==============
+
+In python two methods can never have same name.Hence method overloading is a feature that allows the same operator to have different meanings. 
+
+def add(datatype,*args):
+	
+	if datatype=='int':
+		answer=0
+
+	if datatype=='str':
+		answer=''
+
+	for x in args:
+		answer+=x
+	print(answer)
+
+add('int',20,30)
+add('str','My name is','Anuvab')
+
+when we have two methods with same name that each performs a different task is called method oveeriding
+
+class Animal:
+	def walk(self):
+		print("I am an animal")
+class Dog(Animal):
+	def walk(self):
+		print("I am a dog")
+
+r=dog()
+r.walk()
+r=animal()
+r.walk()
+
+==========How to copy an object in python?==========
+using shallow and deep copy.

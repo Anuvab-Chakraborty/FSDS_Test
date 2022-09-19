@@ -1,0 +1,328 @@
+What is python and its benefits.
+
+Python is a language developed by Guido Van Rossum in
+1991.It is a high level language used for many fields
+of the industry.It is an interpreted language.One of 
+its key feature is that it is a lot similar to natural
+english language making it really easy to code.It is
+also an open source language and there are currently
+many frequent upgrades are coming into Python with a 
+lot of new features.It also have a high level of 
+collection of library and it supports objects and
+modules which helps us to solve real life problems
+using python.It's high level data structure is also
+beneficial for us developers.
+ 
+===================================================
+
+===========what is dynamically typed and interpreter 
+based language.=====================================
+
+Dynamically Typed language means the type checking 
+of the variables in Python are done on the fly and
+it is also a strongly typed language.It doesn't allow
+addition of two complete separate data types easily
+like "1"+2 automatically.
+
+In an interpreted language the programme runs line 
+by line directly from the source code with out any
+intermediatory compiler.JS,RRL,R,PHP.
+====================================
+==========What is scope in python?======================
+
+Scope is a block of code where an object remains
+relevant.
+Like local,global,module level,outermost scope
+==================================================
+
+======What are common built in data types in python?======
+
+There are several built in data types in python:
+Null type : None,numeric type: Int,float,bool,complex
+
+Sequence type: list,tuple,string,range
+
+Mapping type:dictionary
+
+set type:set and frozenset.
+
+Callable types: Docstring
+Modules.
+===========================================
+==========what is pass,break,continue in python============
+
+The Continue statement is used to end the current iteration
+and continue to next iteration.
+
+The Break statement is used to Terminate the loop immediately
+and control moves to the next block of code.
+
+The pass operator represents a null operation in python.
+mainly used to test a function without writing the whole
+code.
+=========================================================
+=====what are modules and packages in python?=========
+=========and their differences.=====================
+The modules is a file containing python statements and
+definition and it is a file with .py extension.There are
+two types of modules : user defined and built in modules.
+
+Packages are a collection of modules.Modules which are
+related to each other are generally put together in a 
+package.
+
+
+
+====================================================
+=======What are global,protected and private?=======
+
+Variables with global attributes are available throughout
+the programme.
+
+Protected attribute variable _Sara can be still accessed
+in or out of the function but within the same class.
+
+Private attribute variable __Sara cannot be accessed outside 
+the function and cannot be inherited too.
+================================================
+
+======what is self and __init__======================
+Self is used to represent the Instance of a class.
+
+__init__ is a constructor which is called automatically to
+allocate memory when an object or instance is created.
+===============================================
+
+======what are unit tests in python=================
+Unit tests are a unit testing framework in python.
+Unit tests are used to test different parts of a
+programme separately before depolyment.
+
+==============================================
+ 
+====what are docstrings and slicing in python========
+Docstrings are used for documenting different parts
+of a function.
+Comments cannot be accessed but docstrings can be
+accessed.
+
+Slicing means to select different parts of a list 
+or string where : this operator is used.Where the
+right points means the start point middle part 
+is used to denote the end point and last part denotes
+step used .
+=================================================
+How memory is managed in python?
+
+Memory allocation in python is managed by python memory
+manager.It creates a private heap in the memory and
+all the python objects and instances are stored in that
+heap memory only.
+====================================================
+===============what are namespaces===============
+Namespaces in python are there to ensure that there
+are no objects with the same name in that py code.
+It maintains a dictionary where name of object is 
+'KEY' and value of object is mapped as the other pair.
+There are global ,local and built-in namespace.
+============================================
+==========what are decorators===================
+Decorators are functions that add more functionility
+to a function without changing the structure of the
+function itself.
+==================================================
+===========what is lambda?=============
+In python lambda is an anonymous function in python
+which can accept any number of arguments.
+mul=lamda a,b:a*b
+print(mul(2,5))
+==================================================
+
+=====what is pickling and unpickling?========
+
+Pickling is a process whereby a python object
+hierarchy is converted into a byte stream and
+the inverse process is known as unpickling.
+======================================
+=========what are generators?================
+It is a function that return an iterable collection
+of items,one at a time ,in a set manner.the yield
+keyword is used.
+========================================
+=======difference between .py and .pyc files?=========
+
+.py contains the source code of the programme.||
+.pyc contains the byte code of the programme.
+While executing the python code the interpreter
+check for the .pyc file if not found searches
+for the .py file and the compiles it to .pyc
+file and then executes the code.
+
+.pyc file saves compilation time.
+=================================================
+
+========how is python interpreted?===============
+Python as a language is not interpreted nor
+compiled first the .py extension of the
+source code is compiled by the interpreter
+and is converted into .pyc file which is in byte
+code format and then that file is interpreted
+by Cpython or JIT compiled by PyPy.
+================================================
+======How are arguments passed in python?=======
+
+Arguments are passed by object or passed by 
+reference in python that means changing the
+the value of the new object will change the 
+value of the original object too.
+
+def append(Arr):
+	arr.append(4)
+
+arr=[1,2,3]
+append(arr)
+print(arr) -> [1,2,3,4]
+=================================
+
+======what are iterators?========
+
+Iterators are an object which
+can iterate over iterable objects
+like list,tuples etc.It can remember 
+the state of itself during iteration.
+it is defined by __iter__().This are 
+self-iterable.
+===================================
+
+=====explain split and join=====
+
+We can use the split function based on
+a delimeter to split a string into a 
+list.
+
+We can use the join function to join two
+lists together based on a delimeter and 
+convert it into a string. 
+
+==================================================
+explain how to open close read and modify a file
+====what does *args and **kwargs means?===========
+how many types of arguments are there in python?=======
+
+There are different types of arguments we can pass
+into function 1:Formal
+2:Actual - In actual arguments there are different
+types :
+position:
+def add(a,b):
+	c=a+b
+	print(c)
+add(5,6)
+Here it is called positional args.
+
+keyword :
+When an argument is string and another is int
+we cannot use the positional args else if we 
+don't use the keyword then the values can get
+interchanged and cause problems.
+def details(name,age):
+	print("name is : ",name)
+	print("Age is : ",age-5)
+details(name="Anuvab",age=28)
+
+default:
+In this case if the user forgets to give 
+an argument there is a default value 
+already assigned in the function that 
+argument is known as default argument.
+def details(name,age=18):
+	print("name is : ",name)
+	print("Age is : ",age)
+details(name="Anuvab")
+
+
+variable length 
+So let's say we want a function to add
+numbers but we don't know how many 
+numbers the user might give so in python
+there is a type of argument called variable
+length argument by using this in the 
+function we can pass any number of variables
+into the function
+def add(*b):
+	c=0
+	for i in b:
+		c=c+i
+	print(c)
+add(5,6,11,23,34) 
+
+Keyword variable length argument:
+It is a lot like variable length 
+but you must pass a keyword with
+it and this send the arguments to
+the function more as a dictionary.
+def details(**a):
+	for i,j in a.items():
+		print(i,j)
+details(name="anuvab",age=21,job="Unplaced")
+
+===============================================
+======what are negative indexes============
+
+Negative indexes are indexes from the end 
+of list and strings in reverse order.
+===========================================
+====what is PIP========
+PIP stands for python installer package.
+==========================================
+====Difference between python and java and c++?=======
+Python is an interpreted language.||Java is both compiled
+and interpreted||C++ is a compiler based language.
+Python is slower than both java and c++||Java is faster
+than python and slower than c++ || C++ is faster than both.
+Code length is a lot lesser than java 3-4 times||
+Java code is hugee|| C++ code is 1.5 times less than java.
+Functions and variables can or cannot be inside a class in
+Python|| Every bit of code is in a class||Function and 
+variables are used outside classes.
+Doesn't depend on syntaxs strictly.||Both depends on
+syntaxes strictly.
+Python is platform independent || Java is also platform
+independent||C++ is platform dependent.
+Python has a lot of library support|| Java has also 
+library support.||C++ has very less library support.
+
+=====what is a pointer.=========================
+
+Pointers are variables that holds the memory address
+of another variable.
+A null pointer is a pointer which does not point to
+any memory locations .
+Dangling pointers occurs at the time when the object
+is deleted or deallocated from memory but the pointer
+isn't modified.
+Pointers doesn't exists in python to reduce the 
+complexity of the code.
+===============================================
+=====why are strings immutable in python.=======
+
+The strings are made immutable in python so that 
+the programmer does'nt alter the contents of the
+object.
+================================================
+===what are the different kind of operators in python====
+
+There are different operators in python like :
+arithmatic operators: *,-,+.
+assignment operators: =,+=,-=.
+comparison operators: and ,or,not.
+identity operaotors:is,is not.
+Membership operators: in,not in.
+bitwise operators: &,| etc.
+=========================================
+====Why is python platform independent.====
+
+Python can run on different environments
+using interpreter meant specifically for
+that platform as long as the python bytecode
+and the virtual machine has the same version.

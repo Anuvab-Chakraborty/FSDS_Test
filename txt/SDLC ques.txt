@@ -1,0 +1,121 @@
+=======What do you mean by sdlc?============
+
+In software engineering SDLC stands for Software Development Life Cycle.
+
+========What are the different stages of sdlc?==========
+
+There are 7 stages of Software Development Life Cycle.
+1.Planning stage.
+2.Analysis Stage.
+3.Design Stage.
+4.Development Stage.
+5.Testing Stage.
+6.Integration Stage.
+7.Maintenance stage.
+
+=======Name some sdlc models=======
+
+Some of the most famous sdlc models are :
+Agile 
+Waterfall
+Lean
+DevOps.
+Iterative
+Spiral
+
+======explain one sdlc model=============
+
+The agile model is based on adaptive software development
+Methods.It believes every project should be handled in
+separate methods.And the Existing methods should be
+tailored for the best suit of the projects.
+Agile model does not use the traditional predictive
+approaches.Instead it uses adaptive approach.
+In agile method there is no detailed planning stage,
+instead there is clarity on future tasks about which
+features needed to be developed.
+It uses the iterative approache where each phase
+consists with :
+planning->Requirement analysis->
+Designing->Building->Testing and then after the 
+first iteration the process is continued again.
+
+
+The advantages of Agile model:
+It is a very realistic approach to software dev.
+Promotes teamwork and cross training.
+Resource requirements are minimum.
+Suitable for both fixed and changing requirements.
+Delivers early partial working solutions.
+Minimal rules,documentation easily employed.
+East to manage.
+
+The disadvantages of Agile model:
+More risks of sustainability,maintainability
+Depends heavily on customer interaction,if the
+customer is not clear the team maybe driven in the 
+wrong direction.
+There is a very high individual dependency,since
+there is minimum documentation.
+Not suitable for handling complex dependencies.
+
+===============================================
+
+=====Explain waterfall model================
+
+The waterfall model was the first software development
+model which was introduce.It is known as linear sequencial
+life cycle model.Here the next phase begins only
+when the first phase is over.
+It consists of the following stages:
+#Requirement gathering and analysis : All the requirements
+of the system to be developed are captured and 
+documented is a requirement document.
+#System Design : The requirement specifications from
+first phase are studied and the design is prepared.
+#Implementation: With inputs from system design the
+system is first developed and tested in small 
+programs called units.
+#Integration and Testing: After all the testing the
+small units are integrated into a system.And then
+the full system is tested.
+#deployment: Once the testing is done the product
+is deployed in the customer environment or released
+into the market.
+#maintenance: There are some issues that may come 
+up in the client environment to resolve them patches
+are released.
+
+The advantages of waterfall model is that:
+
+It is simple to understand and use.
+It is easy to manage.
+Phases are processed and completed one at a time.
+Works well for smaller projects.
+Well understood milestones
+Easy to arrange tasks.
+
+Disadvantages:
+High amounts of risk and uncertainty.
+No working software is produced until late 
+during the life cycle.
+Not a good model for complex object oriented projects.
+Poor for long and ongoing projects.
+
+=========================================
+
+=====difference between agile and waterfall models====
+
+Agile divides the projects into small sprints || 
+Waterfall model divides the project into distinct 
+phases.
+Agile follows an incremental approach || Waterfall
+follows a sequential approach.
+Agile is more flexible. || Waterfall is rigid
+
+Test plan in agile is reviewed frequently|| Test 
+plan is reviewed rarely.
+
+Agile is linked to customer ideas deeply. || 
+Waterfall is not dependent upon customers idea that much.
+

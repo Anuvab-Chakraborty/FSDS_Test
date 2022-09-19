@@ -1,0 +1,81 @@
+What does SMTP stands for?
+Simple Mail Transfer Protocol.It's job is to link different servers together to transfer mails.
+
+What is TCP?
+
+TCP stands for Transmission Control Protocol.
+
+What is the full form of Tkinter?
+
+Toolkit Interface.
+
+Full form of PIL?
+
+Python Imaging Library.
+
+What is requests in Python?
+
+It is a simple and elegant HTTP library in python.
+
+What is an API?
+
+API stands for application programming interface.It acts as an intermediatiory
+between two softwares.it is also encapsulated and is an example of data abstraction.
+
+What is an API key?
+
+API key is the unique user authentication code by which the api 
+recognises the user and perform the required tasks then.
+
+What does SSL,TLS stands for?
+
+SSL stands for Secured sockets layer. It is a technology used to keep
+the connection to the internet secured.
+
+TLS stands for Transport Layer security.It is a cryptographic protocol.
+
+What is cryptography?
+
+It is a python module used to encrypt or decrypt data.
+
+What is Fernet ?
+
+Fernet is a function of the cryptography package. It is used to make
+sure that the encrypted data cannot be read without having the access of 
+its key.Each generated key is composed of two smaller keys.A 128 bit
+AES key and another 128 bit HMAC signing key.
+
+What is a QR code?
+
+A QR code is a Quick Response Code.It is a 2 dimensional bar code 
+invented in 1994.
+
+QR code module is used and by using it's make function we can 
+generate our personalized qr code.
+
+What is the full form of URL?
+
+Uniform Resource Locator.Its size is 2Mb.
+
+AES stands for?
+
+Advanced encryption standard.
+
+JSON stands for?
+
+JAVASCRIPT OBJECT NOTATION.
+
+HTTP 404 AND 200 meaning?
+
+HTTP 200 MEANS REQUEST SUCCESSFUL
+HTTP 404 MEANS NOT FOUND THE REQUESTED URL.
+
+What is a cursor?
+
+A temporary work area created in the memory when a
+SQL command is executed.
+
+
+
+
+
